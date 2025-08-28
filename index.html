@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ventura Improv Company</title>
+	<style>
+		body {
+			margin: 1rem;
+		}
+		main {
+			max-inline-size: 50rem;
+			margin-inline: auto;
+		}
+		h1,
+		.content {
+			text-align: center;
+		}
+
+		.class-and-shows {
+			display: grid;
+			justify-items: center;
+			gap: 1rem;
+		}
+		.class, .show {
+			width: 18rem;
+			outline: 1px solid #ccc;
+			padding: 0 1rem;
+		}
+		@media screen  and (min-width: 43rem){
+			.class-and-shows {
+				grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<main>
+	<h1>
+		<img width="300" height="186" src="./index_files/viclogo-160x99.png" class="custom-logo" alt="Ventura Improv Company" decoding="async" srcset="
+		./index_files/viclogo-160x99.png 160w, 
+		./index_files/viclogo-300x186.png 300w, 
+		./index_files/viclogo-1024x635.png 1024w, 
+		./index_files/viclogo-768x476.png 768w, 
+		./index_files/viclogo.png 1333w" 
+		sizes="(max-width: 300px) 100vw, 300px">
+	</h1>
+	<p class="content">We're doing some work on our website. Stay tuned!</p>
+	<div class="class-and-shows">
+		<div class="class">
+			<h2>Classes</h2>
+			<p>Mondays, 7-9pm. $10, your 1st class is free!</p>
+			<ul>
+				<li>Sept. 1st - No Class</li>
+				<li>Sept. 8th - Class</li>
+			</ul>
+		</div>
+		<div class="show">
+			<h2>Show</h2>
+			<p>Second Friday of the month, 7-9pm.<br>
+				Tickets: $10 online, $15 at the door</p>
+			<ul>
+				<li>Sept. 12th - <a href="https://nambaarts.com/ventura-improv-company-24/">Get Tickets</a></li>
+			</ul>
+		</div>
+	</div>
+	</main>
+</body>
+</html>
