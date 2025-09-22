@@ -21,6 +21,9 @@
 			max-inline-size: 60rem;
 			margin-inline: auto;
 		}
+		p, li {
+			line-height: 1.333;
+		}
 		h1 {
 			text-align: center;
 		}
@@ -34,9 +37,9 @@
 		}
 
 		img.custom-logo {
-    margin-inline: auto;
-}
-.notice {
+			margin-inline: auto;
+		}
+		.notice {
 			text-align: center;
 			font-style: italic;
 			margin-block-end: 2rem;
@@ -57,19 +60,23 @@
 			}
 		}
 
-.show {
-    width: 90%;
-    margin-inline: auto;
-		margin-block: 2rem;
-    border: 2px solid var(--color-primary);
-}
-.show-description {
-    padding: 1rem;
-}
+		.show,
+		.class {
+			width: 90%;
+			margin-inline: auto;
+			margin-block: 2rem;
+			border: 2px solid var(--color-primary);
+		}
+		.show-description,
+		.class-description {
+			padding: 1rem;
+		}
 		.show-description h3 {
-    margin-block-start: 0;
-    font-size: 1.3rem;
-}
+			margin-block-start: 0;
+			font-size: 1.3rem;
+		}
+		
+
 
 		.wp-block-social-links {
 			margin-block-end: 0;
@@ -103,7 +110,8 @@
 			<h2>Shows</h2>
 			<p>
 				<strong>When:</strong> Second Friday of the month, 7-9pm.<br>
-				<strong>Price:</strong> $10 online, $15 at the door
+				<strong>Price:</strong> $10 online, $15 at the door<br>
+				&nbsp;
 			</p>
 			
 			<div class="show">
@@ -126,15 +134,16 @@
 				alt="">
 				<div class="show-description">
 					<h3>The Spooky Show</h3>
-					<strong> Friday, October 10, 7pm</strong><br>
-					NAMBA Arts, 47 S. Oak Street, Downtown Ventura<br>
-					<strong>Tickets:</strong> <a href="https://nambaarts.com/ventura-improv-company-25">https://nambaarts.com/ventura-improv-company-25</a> or 805-628-9250<br>
-					<br>
-					Start Eerie Octobeer off at NAMBA ARTS with a night of weird, mysterious, hilarious scenes and games - all made up for you, on the spot!
+					<p>
+						<strong> Friday, October 10, 7pm</strong><br>
+						NAMBA Arts, 47 S. Oak Street, <br>Downtown Ventura<br>
+						<strong>Tickets:</strong> <a href="https://nambaarts.com/ventura-improv-company-25">https://nambaarts.com/ventura-improv-company-25</a> or 805-628-9250
+					</p>
+					<p>Start Eerie Octobeer off at NAMBA ARTS with a night of weird, mysterious, hilarious scenes and games - all made up for you, on the spot!</p>
 				</div><!-- /.show-description -->
 			</div>
-			<strong>More Shows</strong>
-			<ul class="more-shows">
+			<p><strong>More Shows</strong>: Nov. 14th, Dec. 12th</p>
+			<ul class="more-shows" style="display: none;">
 				<li>Nov. 14th</li>
 				<li>Dec. 12th</li>
 			</ul>
@@ -144,8 +153,7 @@
 			<p>
 				<strong>When:</strong> Every Monday, 7-8:30pm.<br>
 				<strong>Price:</strong> $10.00 a class or 5 for $40.00<br>
-				<strong style="visibility: hidden;" aria-hidden="true">Price:</strong> (Your 1st class is free!)<br>
-				<strong><a href="https://nambaarts.com/series/improv-with-ventura-improv-company/">More Info</a></strong>
+				<strong style="visibility: hidden;" aria-hidden="true">Price:</strong> <em>Your 1st class is free!</em>
 			</p>
 			<div class="class">
 <img
@@ -158,6 +166,10 @@ srcset="
 ./images/classes/learnimprovfrompros_szgewc_c_scale,w_800.jpg 800w"
 src="./images/classes/learnimprovfrompros_szgewc_c_scale,w_800.jpg"
 alt="">
+				<div class="show-description">
+					<p>Come learn short-form improv and games, stage work, and more! All levels - just drop by. We've been creating laughter since 1989!</p>
+					<p><strong><a href="https://nambaarts.com/series/improv-with-ventura-improv-company/">More Info</a></strong></p>
+				</div>
 			</div>
 		</div>
 	</div>
