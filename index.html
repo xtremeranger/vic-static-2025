@@ -45,18 +45,19 @@
 			margin-block-end: 2rem;
 		}
 		.class-and-shows {
-			display: grid;
-			justify-items: center;
-			gap: 1rem;
+			display: flex;
+			flex-direction: column;
+			row-gap: 4rem;
+			column-gap: 2rem;
 		}
 		.classes-section, .shows-section {
-			/* width: 60rem;*/
+			flex: 1;
 			outline: 1px solid #ccc;
 			padding: 0 1rem;
 		}
 		@media screen  and (min-width: 43rem){
 			.class-and-shows {
-				grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+				flex-direction: row;
 			}
 		}
 
