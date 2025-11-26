@@ -28,7 +28,7 @@
 			text-align: center;
 		}
 		img {
-			display: inline-block;
+			display: block;
 			max-width: 100%;
 			height: auto;
 		}
@@ -44,6 +44,10 @@
 			font-style: italic;
 			margin-block-end: 2rem;
 		}
+		.tel {
+			white-space: nowrap;
+		}
+
 		.class-and-shows {
 			display: flex;
 			flex-direction: column;
@@ -59,6 +63,12 @@
 			.class-and-shows {
 				flex-direction: row;
 			}
+			.show--nye {
+				display: flex;
+			}
+			.show.show--nye > * {
+				flex: 1;
+			}
 		}
 
 		.show,
@@ -73,8 +83,14 @@
 			padding: 1rem;
 		}
 		.show-description h3 {
-			margin-block-start: 0;
+			
 			font-size: 1.3rem;
+		}
+		.show-description > :first-child {
+			margin-block-start: 0;
+		}
+		.show-description > :last-child {
+			margin-block-end: 0;
 		}
 		
 
@@ -105,6 +121,35 @@
 		/index_files/viclogo.png 1333w" 
 		sizes="(max-width: 300px) 100vw, 300px">
 	</h1>
+	<div class="show show--nye">
+		<div class="show-image">
+			<img
+sizes="(max-width: 915px) 100vw, 915px"
+srcset="
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_320.jpg 320w,
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_427.jpg 427w,
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_525.jpg 525w,
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_604.jpg 604w,
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_869.jpg 869w,
+./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_915.jpg 915w"
+src="./images/2025-12-31/12-31-2025-NYE-Rubicon-SQ_tdewxd_c_scale,w_915.jpg"
+alt="">
+		</div>
+		<div class="show-description">
+			<h3 style="max-width: 50ch;">
+				NEW YEARS EVE with the VENTURA IMPROV COMPANY
+			</h3>
+			<p>
+				<strong> Wednesday, December 31 | 7pm</strong><br>
+				Rubicon Theatre, 1006 E. Main St., Ventura<br>
+				<strong>Tickets/Info:</strong> <a href="https://ci.ovationtix.com/35804/production/1257242">Rubicon Website</a> or <span class="tel">(805) 667-2900</span>
+			</p>
+			<p>It’s back! Ring in the New Year with Ventura’s favorite tradition of laughter at the Rubicon.</p>
+			<p>Enjoy an evening of made-up-on-the-spot comedy and musical fun, complete with bubbly, beer, wine, soft drinks, hors d’oeuvres and sweet treats.</p>
+			<p>The show wraps up by 10:30pm, so you can head home – or keep the celebration going!</p>
+			<p>This event WILL sell out, so get your tickets early!</p>
+		</div><!-- /.show-description -->
+	</div><!-- /.show -->
 	<div class="class-and-shows">
 		<div class="shows-section">
 			<h2>Shows</h2>
@@ -135,12 +180,12 @@
 					<p>
 						<strong> Friday, December 12 | 7pm</strong><br>
 						NAMBA Arts, 47 S. Oak St., <br>Downtown Ventura<br>
-						<strong>Tickets/Info:</strong> <a href="https://nambaarts.com/ventura-improv-company-27">https://nambaarts.com/ventura-improv-company-27</a> or 805-628-9250
+						<strong>Tickets/Info:</strong> <a href="https://nambaarts.com/ventura-improv-company-27">NAMBA Website</a> or <span class="tel">805-628-9250</span>
 					</p>
 					<p>It’s the most Hallmarkiest time of the year! Watch the Ventura Improv Company spin your suggestions into a cozy holiday rom-com set in postcard-perfect Ventura. Expect snow, cookies, and meet-cutes galore...will there be a mistletoe kiss? You’ll have to see!</p>
 				</div><!-- /.show-description -->
 			</div>
-			<p><strong>More Shows</strong>: Dec. 31st, Jan. 9th, Feb. 13th</p>
+			<p><strong>More Shows</strong>: Jan. 9th, Feb. 13th</p>
 			<ul class="more-shows" style="display: none;">
 				<li>Dec. 12th, 2025</li>
 				<li>Jan. 9th, 2026</li>
